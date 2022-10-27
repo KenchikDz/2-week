@@ -1,0 +1,223 @@
+html {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: "cReg";
+  src: url("../fonts/BERNIERRegular-Regular.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "berni";
+  src: url("../fonts/Blogger\ Sans.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+body {
+  font-family: "berni", Verdana;
+  font-size: 100%;
+  background: #fff;
+}
+
+.picture img {
+  position: relative;
+  width: calc(100% / 1.5);
+  left: 15%;
+  right: 15%;
+}
+
+.picture2 img {
+  position: relative;
+  width: calc(100% / 1.5);
+  left: 15%;
+}
+
+span {
+  color: red;
+}
+
+.texts {
+  width: 30%;
+}
+
+.texts2 {
+  width: 30%;
+}
+
+.cont2 {
+  position: relative;
+  left: 160px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 100px;
+}
+.cont {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 100px;
+}
+
+h2 {
+  font-family: "cReg";
+}
+.wrap {
+  margin: 0 auto;
+  width: 70%; /* отступы относительно окна браузера */
+}
+header {
+  background-color: lightgray;
+}
+.header {
+  height: 100px;
+  padding: 1.3em 0em; /* поля вокруг текста */
+}
+.logo {
+  margin-top: -10px;
+  float: left; /* обтекание логотипа */
+}
+.logo img {
+  position: absolute;
+  width: calc(100% / 13);
+}
+.logo a {
+  display: block; /* переопределение в блочный  */
+}
+.nav {
+  float: right; /* обтекание логотипа */
+  margin-top: 0.82em;
+}
+.nav > ul > li {
+  display: inline-block; /* переопределение в строчно-блочный  */
+}
+
+.nav > ul > li > a {
+  text-decoration: none;
+  display: block;
+  font-family: "cReg", sans-serif;
+  font-size: 1.1em;
+  text-transform: uppercase;
+  padding: 0.5em 1em;
+  color: #444;
+  -webkit-transition: 0.9s; /* плавный переход  */
+  -moz-transition: 0.9s;
+  -o-transition: 0.9s;
+  transition: 0.9s;
+}
+.nav > ul > li > a:hover {
+  color: #fff;
+  background: black;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  left: -1;
+  right: 1;
+  background: lightgray;
+  height: auto;
+  width: 100%;
+  padding-top: 40px;
+  color: black;
+}
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-content h3 {
+  font-size: 2.1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.footer-content a {
+  color: black;
+  text-decoration: none;
+}
+
+.damn img {
+  width: calc(100% / 2);
+}
+
+.logo-footer img {
+  width: calc(100% / 13);
+}
+
+.damn {
+  position: relative;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(2, 50%);
+}
+
+.block {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.block img {
+  object-fit: contain;
+  height: 100%;
+  display: block;
+  position: relative;
+  width: calc(100% * 1);
+  overflow: hidden;
+  -webkit-transition: all 0.7s ease-in-out;
+  -moz-transition: all 0.7s ease-in-out;
+  -ms-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+}
+
+.block__text {
+  line-height: 175px;
+  color: white;
+  text-align: center;
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0;
+  -webkit-transition: all 0.7s ease-in-out;
+  -moz-transition: all 0.7s ease-in-out;
+  -ms-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+}
+
+.block__text a {
+  color: white;
+  text-decoration: none;
+}
+
+.block:hover .block__text {
+  opacity: 0.7;
+}
+
+.block:hover img {
+  transform: scale(1.2);
+}
